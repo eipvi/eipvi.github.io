@@ -1,2 +1,1 @@
-# eipvi.github.io
- My Site
+# http://eipvi.github.io
