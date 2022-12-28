@@ -56,7 +56,7 @@
         right: 35px;
         z-index: 200;
         cursor: pointer;
-        transition: all 0.2s step-end;
+        transition: all 0.2s ease-out;
     }
 
     .jl-btn-contact:hover {
