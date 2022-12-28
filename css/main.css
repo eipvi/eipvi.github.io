@@ -44,6 +44,16 @@
         display: none;
     }
 
+    .jl-btn-contact {
+        width: 38px;
+        height: 38px;
+        display: block;
+        background-color: #ec2502;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+    }
+
     .jl-btn-menu-mob {
         width: 38px;
         height: 38px;
