@@ -45,8 +45,8 @@
     }
 
     .jl-btn-contact {
-        width: 35px;
-        height: 15px;
+        width: 25px;
+        height: 35px;
         display: block;
         background-color: transparent;
         background-image: url('../images/icon-contact-close.svg');
@@ -60,7 +60,7 @@
     }
 
     .jl-btn-contact:hover {
-        background-position: -1px -20px;
+        background-position: -1px -50px;
     }
 
     .jl-btn-menu-mob {
@@ -189,4 +189,24 @@
 
 @media screen and (min-width: 1600px){
     
+}
+
+.jl.text-orange {
+    color:#c54307
+}
+
+.jl.text-clack {
+    color:#000000
+}
+
+.jl.text-dark {
+    color:#4d4c4c
+}
+
+.jl.text-light {
+    color:#bcbcbc
+}
+
+.jl.text-white {
+    color:#fff
 }
