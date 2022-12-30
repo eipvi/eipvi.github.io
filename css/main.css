@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    font font-family: 'Open Sand', sans-serif;
 }
 
 @media screen and (min-width: 280px){
@@ -61,6 +67,35 @@
 
     .jl-btn-contact:hover {
         background-position: -1px -50px;
+    }
+
+    .jl-contact-info {
+        width: 230px;
+        height: 135px;
+        padding: 25px;
+        position: fixed;
+        bottom: 85px;
+        right: 65px;
+        z-index: 200;
+    }
+
+    .jl-social-links {
+        width: 100%;
+        height: 45px;
+        display: block;
+    }
+
+    .jl-social {
+        width: 45px;
+        height: 20px;
+        display: inline-block;
+    }
+
+    .jl-social > img {
+        width: 19px;
+        height: auto;
+        display: block;
+        margin: 15px auto 0;
     }
 
     .jl-btn-menu-mob {
@@ -191,22 +226,47 @@
     
 }
 
-.jl.text-orange {
+.jl-title {
+    font-family: 'Abril Fatface', serif;
+    font-weight: normal;
+}
+
+.jl-text-orange {
     color:#c54307
 }
 
-.jl.text-clack {
+.jl-text-black {
     color:#000000
 }
 
-.jl.text-dark {
+.jl-text-dark {
     color:#4d4c4c
 }
 
-.jl.text-light {
+.jl-text-light {
     color:#bcbcbc
 }
 
-.jl.text-white {
+.jl-text-white {
     color:#fff
+}
+
+.jl-bg-orange {
+    background-color:#c54307
+}
+
+.jl-bg-black {
+    background-color:#000000
+}
+
+.jl-bg-dark {
+    background-color:#4d4c4c
+}
+
+.jl-bg-light {
+    background-color:#bcbcbc
+}
+
+.jl-bg-white {
+    background-color:#fff
 }
