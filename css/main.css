@@ -70,19 +70,33 @@ p {
     }
 
     .jl-contact-info {
-        width: 230px;
+        width: 200px;
         height: 135px;
-        padding: 25px;
+        padding: 23px;
         position: fixed;
         bottom: 85px;
-        right: 65px;
+        right: 39px;
         z-index: 200;
+    }
+
+    .jl-contact-info-inner {
+        display: table;
+        width: 100%;
+        float: right;
+    }
+
+    .jl-contact-info-inner p {
+        font-size: 15px;
+        line-height: 22px;
     }
 
     .jl-social-links {
         width: 100%;
         height: 45px;
         display: block;
+        position: relative;
+        left: -12px;
+        margin-top: 7px;
     }
 
     .jl-social {
@@ -95,7 +109,26 @@ p {
         width: 19px;
         height: auto;
         display: block;
-        margin: 15px auto 0;
+        margin: 13px auto 0;
+    }
+
+    .jl-corner {
+        width: 25px;
+        height: 25px;
+        display: block;
+        float: right;
+        display: relative;
+    }
+
+    .jl-corner::after {
+        content: '';
+        width: 20px;
+        height: 27px;
+        display: block;
+        position: absolute;
+        bottom: -19px;
+        right: 0;
+        background: transparent url(../images/ic.svg) no-repeat;
     }
 
     .jl-btn-menu-mob {
@@ -269,4 +302,9 @@ p {
 
 .jl-bg-white {
     background-color:#fff
+}
+
+.jl-bg-Blacktrans {
+    background-color: rgba(0, 0, 0, 0.548)
+    
 }
