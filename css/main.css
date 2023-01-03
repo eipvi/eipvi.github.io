@@ -58,7 +58,7 @@ p {
         background-image: url('../images/icon-contact-close.svg');
         background-repeat: no-repeat;
         position: fixed;
-        bottom: 45px;
+        bottom: 39px;
         right: 35px;
         z-index: 200;
         cursor: pointer;
@@ -74,9 +74,10 @@ p {
         height: 135px;
         padding: 23px;
         position: fixed;
-        bottom: 85px;
-        right: 39px;
+        bottom: 90px;
+        right: 45px;
         z-index: 200;
+        display: none;
     }
 
     .jl-contact-info-inner {
@@ -140,7 +141,7 @@ p {
         background-color: #c54307;
         color: #000000;
         position: fixed;
-        right: 30px;
+        right: 35px;
         top: 30px;
         z-index: 1260;
         cursor: pointer;
@@ -308,3 +309,8 @@ p {
     background-color: rgba(0, 0, 0, 0.548)
     
 }
+
+/*C comportat*/
+.jl-is-open {
+    display: block;
+} 

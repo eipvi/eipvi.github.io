@@ -1,6 +1,13 @@
 //declaring variables
+var btnContact = document.querySelector('.jl-btn-contact');
 var toggleMenu = document.querySelectorAll('.jl-toggle-menu');
 var menuMobile = document.querySelector('.jl-menu-mob');
+
+btnContact.addEventListener('click', function () {
+    var boxContact = document.querySelector('.jl-contact-info');
+
+    boxContact.classList.toggle('jl-is-open');
+});
 
 //page Preloader
 
@@ -27,3 +34,5 @@ for (var i = 0; i < toggleModal.length; i++) {
         menuMobile.classList.toggle('jl-menu-is-open');
     });
 }
+
+jl-contact-info
