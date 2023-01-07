@@ -65,10 +65,6 @@ p {
         transition: all 0.2s ease-out;
     }
 
-    .jl-btn-contact:hover {
-        background-position: -1px -50px;
-    }
-
     .jl-contact-info {
         width: 200px;
         height: 135px;
@@ -314,3 +310,7 @@ p {
 .jl-is-open {
     display: block;
 } 
+
+.jl-change-icon {
+    background-position-y: -1px -50px;
+}

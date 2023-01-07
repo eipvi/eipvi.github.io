@@ -5,8 +5,8 @@ var menuMobile = document.querySelector('.jl-menu-mob');
 
 btnContact.addEventListener('click', function () {
     var boxContact = document.querySelector('.jl-contact-info');
-
     boxContact.classList.toggle('jl-is-open');
+    this.classList.toggle('jl-change-icon');
 });
 
 //page Preloader
