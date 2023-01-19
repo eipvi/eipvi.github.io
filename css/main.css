@@ -12,12 +12,24 @@ p {
 
 @media screen and (min-width: 280px){
    
-    .jl-page-wrapper{
-        width: 100%;
+    .jl-page-wrapper, .jl-preloader {
+        width: 100%; 
         height: 100vh;
         display: block;
         background-color: #1c1c1c;
         border: 19px solid #000;
+    }
+
+    .jl-preloader {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: 0;
     }
 
     .jl-topbar{
@@ -51,18 +63,19 @@ p {
     }
 
     .jl-btn-contact {
-        width: 25px;
+        width: 35px;
         height: 40px;
         display: block;
+        background-color: transparent;
         background-image: url('../images/icon-contact-close.svg');
         background-repeat: no-repeat;
         position: fixed;
         bottom: 45px;
-        right: 34px;
+        right: 24px;
         z-index: 200;
-        border-radius: 50%;
         cursor: pointer;
         transition: all 0.2s ease-out;
+        border: none;
     }
 
     .jl-contact-info {
