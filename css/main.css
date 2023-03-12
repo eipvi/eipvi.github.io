@@ -10,6 +10,12 @@ p {
     font font-family: 'Open Sand', sans-serif;
 }
 
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
 @media screen and (min-width: 280px){
    
     .jl-page-wrapper, .jl-preloader {
@@ -30,6 +36,10 @@ p {
         position: fixed;
         top: 0;
         left: 0;
+    }
+
+    .jl-preloader-inner {
+        margin-top: -45px;
     }
 
     .jl-topbar{
@@ -319,6 +329,46 @@ p {
     
 }
 
+.jl-mar-15 {
+    margin: 15px;
+}
+
+.jl-mar-top-15 {
+    margin-top: 15px;
+}
+
+.jl-mar-right-15 {
+    margin-right: 15px;
+}
+
+.jl-mar-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.jl-mar-left-15 {
+    margin-left: 15px;
+}
+
+.jl-pad-15 {
+    padding: 15px;
+}
+
+.jl-pad-top-15 {
+    padding-top: 15px;
+}
+
+.jl-pad-right-15 {
+    padding-right: 15px;
+}
+
+.jl-pad-bottom-15 {
+    padding-bottom: 15px;
+}
+
+.jl-pad-left-15 {
+    padding-left: 15px;
+}
+
 /*C comportat*/
 .jl-is-open {
     display: block;
@@ -326,4 +376,8 @@ p {
 
 .jl-change-icon {
     background-position-y: -50px;
+}
+
+.jl-fade-out{
+    animation: fadeOut 2s forwards ease-out;
 }
