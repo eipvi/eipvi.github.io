@@ -7,7 +7,7 @@
 }
 
 p {
-    font font-family: 'Open Sand', sans-serif;
+ font-family: 'Open Sand', sans-serif;
 }
 
 @keyframes fadeOut {
@@ -18,15 +18,15 @@ p {
 
 @media screen and (min-width: 280px){
    
-    .jl-page-wrapper, .jl-preloader {
+    .pv-page-wrapper, .pv-preloader {
         width: 100%; 
         height: 100vh;
         display: block;
         background-color: #1c1c1c;
-        border: 19px solid #000;
+        border: 20px solid #1c1c1c;
     }
 
-    .jl-preloader {
+    .pv-preloader {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -38,11 +38,11 @@ p {
         left: 0;
     }
 
-    .jl-preloader-inner {
+    .pv-preloader-inner {
         margin-top: -45px;
     }
 
-    .jl-topbar{
+    .pv-topbar{
         width: 100%;
         height:110px;
         display: block;
@@ -53,26 +53,29 @@ p {
 
     }
 
-    .jl-logo{
+    .pv-logo{
         width: 74px;
         height: 110px;
         float: left;
-        margin-left: 40px;
+        margin-left: 60px;
         background-color: #c54307;
         border-radius: 0 0 37px 0;
     }
 
-    .jl-logo img {
+    .pv-logo img {
         width: 56px;
-        height: 40px;
+        height: 31px;
         display: block;
         margin: 55px auto 0 auto;
     }
-    .jl-menu {
+    .pv-menu {
         display: none;
+        position: relative; /* Ou position: absolute; dependendo do seu layout */
+        z-index: 1000;
+    
     }
 
-    .jl-btn-contact {
+    .pv-btn-contact {
         width: 35px;
         height: 40px;
         display: block;
@@ -88,7 +91,7 @@ p {
         border: none;
     }
 
-    .jl-contact-info {
+    .pv-contact-info {
         width: 200px;
         height: 135px;
         padding: 23px;
@@ -99,18 +102,18 @@ p {
         display: none;
     }
 
-    .jl-contact-info-inner {
+    .pv-contact-info-inner {
         display: table;
         width: 100%;
         float: right;
     }
 
-    .jl-contact-info-inner p {
+    .pv-contact-info-inner p {
         font-size: 15px;
         line-height: 22px;
     }
 
-    .jl-social-links {
+    .pv-social-links {
         width: 100%;
         height: 45px;
         display: block;
@@ -119,20 +122,20 @@ p {
         margin-top: 7px;
     }
 
-    .jl-social {
+    .pv-social {
         width: 45px;
         height: 20px;
         display: inline-block;
     }
 
-    .jl-social > img {
+    .pv-social > img {
         width: 19px;
         height: auto;
         display: block;
         margin: 13px auto 0;
     }
 
-    .jl-corner {
+    .pv-corner {
         width: 25px;
         height: 25px;
         display: block;
@@ -140,7 +143,7 @@ p {
         display: relative;
     }
 
-    .jl-corner::after {
+    .pv-corner::after {
         content: '';
         width: 20px;
         height: 27px;
@@ -151,7 +154,7 @@ p {
         background: transparent url(../images/ic.svg) no-repeat;
     }
 
-    .jl-btn-menu-mob {
+    .pv-btn-menu-mob {
         width: 38px;
         height: 38px;
         display: block;
@@ -166,16 +169,16 @@ p {
         cursor: pointer;
     }
 
-   .jl-btn-menu-mob ion-icon {
+   .pv-btn-menu-mob ion-icon {
      vertical-align: middle;
     
     }
 
-    .jl-btn-menu-mob ion-icon img { 
+    .pv-btn-menu-mob ion-icon img { 
         width: 30px;
        }
 
-    .jl-menu-mob {
+    .pv-menu-mob {
         width: 240px;
         height: 100vh;
         display: block;
@@ -186,15 +189,15 @@ p {
         z-index: 1200;
     }
 
-    .jl-menu-is-open {
+    .pv-menu-is-open {
         right: 0;
     }
 
-    .jl-menu-is-closed {
+    .pv-menu-is-closed {
         right: -240px;
     }   
 
-    .jl-menu-mob a {
+    .pv-menu-mob a {
         width: 100%;
         height: 60px;
         display: block;
@@ -205,11 +208,11 @@ p {
         text-decoration: none;
     }
 
-    .jl-menu-mob a:hover {
+    .pv-menu-mob a:hover {
         color: #c54307;
     }
 
-    .jl-overlay, .jl-menu-overlay {
+    .pv-overlay, .pv-menu-overlay {
         width: 100%;
         height: 100vh;
         display: none;
@@ -231,38 +234,62 @@ p {
 @media screen and (min-width: 992px){
 
 
-    .jl-menu-mob {
+    .pv-menu-mob {
         display: none;
     }
 
-    .jl-btn-menu-mob {
+    .pv-btn-menu-mob {
         display: none;
     }
   
-    .jl-menu {
-        display: table;
+    .pv-menu {
+        display: block;
         float: left;
         height: 110px;
         margin-left: 30px;
+
+ 
     }
 
-    .jl-menu a {
+    .pv-menu a {
         font-family: 'Open Sans';
         font-size: 14px;
-        color: #fff;
+        color: #bcbcbc;
         text-decoration: none;
         display: inline-block;
         padding: 0 20px;
         margin-top: 50px;
         font-weight: 400;
+        position: relative;
+
     }
 
-    .jl-menu a:first-child {
+    .pv-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+
+    }
+
+
+    .pv-menu a:first-child {
         padding-left: 0;
     }
 
-    .jl-menu a:hover {
+    .pv-menu a:hover {
         color: #c54307;
+    }
+
+    .pv-menu a::before {
+        content: '';
+        width: 100%;
+        height: 4px;
+        background-color: #c54307;
+        display: block;
+        position: absolute;
+        bottom: ;
+
     }
 
 }
@@ -279,105 +306,105 @@ p {
     
 }
 
-.jl-title {
+.pv-title {
     font-family: 'Abril Fatface', serif;
     font-weight: normal;
 }
 
-.jl-text-orange {
+.pv-text-orange {
     color:#c54307
 }
 
-.jl-text-black {
+.pv-text-black {
     color:#000000
 }
 
-.jl-text-dark {
+.pv-text-dark {
     color:#4d4c4c
 }
 
-.jl-text-light {
+.pv-text-light {
     color:#bcbcbc
 }
 
-.jl-text-white {
+.pv-text-white {
     color:#fff
 }
 
-.jl-bg-orange {
+.pv-bg-orange {
     background-color:#c54307
 }
 
-.jl-bg-black {
+.pv-bg-black {
     background-color:#000000
 }
 
-.jl-bg-dark {
+.pv-bg-dark {
     background-color:#4d4c4c
 }
 
-.jl-bg-light {
+.pv-bg-light {
     background-color:#bcbcbc
 }
 
-.jl-bg-white {
+.pv-bg-white {
     background-color:#fff
 }
 
-.jl-bg-Blacktrans {
+.pv-bg-Blacktrans {
     background-color: rgba(0, 0, 0, 0.548)
     
 }
 
-.jl-mar-15 {
+.pv-mar-15 {
     margin: 15px;
 }
 
-.jl-mar-top-15 {
+.pv-mar-top-15 {
     margin-top: 15px;
 }
 
-.jl-mar-right-15 {
+.pv-mar-right-15 {
     margin-right: 15px;
 }
 
-.jl-mar-bottom-15 {
+.pv-mar-bottom-15 {
     margin-bottom: 15px;
 }
 
-.jl-mar-left-15 {
+.pv-mar-left-15 {
     margin-left: 15px;
 }
 
-.jl-pad-15 {
+.pv-pad-15 {
     padding: 15px;
 }
 
-.jl-pad-top-15 {
+.pv-pad-top-15 {
     padding-top: 15px;
 }
 
-.jl-pad-right-15 {
+.pv-pad-right-15 {
     padding-right: 15px;
 }
 
-.jl-pad-bottom-15 {
+.pv-pad-bottom-15 {
     padding-bottom: 15px;
 }
 
-.jl-pad-left-15 {
+.pv-pad-left-15 {
     padding-left: 15px;
 }
 
 /*C comportat*/
-.jl-is-open {
+.pv-is-open {
     display: block;
 } 
 
-.jl-change-icon {
+.pv-change-icon {
     background-position-y: -50px;
 }
 
-.jl-fade-out{
+.pv-fade-out{
     animation: fadeOut 2s forwards ease-out;
 }

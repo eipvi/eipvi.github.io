@@ -1,23 +1,23 @@
 //declaring variables
-var btnContact = document.querySelector('.jl-btn-contact');
-var toggleMenu = document.querySelectorAll('.jl-toggle-menu');
-var menuMobile = document.querySelector('.jl-menu-mob');
+var btnContact = document.querySelector('.pv-btn-contact');
+var toggleMenu = document.querySelectorAll('.pv-toggle-menu');
+var menuMobile = document.querySelector('.pv-menu-mob');
 
 //page preloader
 window.addEventListener('load', function(){
-    var pagePreloder = document.querySelector('.jl-preloader')
+    var pagePreloder = document.querySelector('.pv-preloader')
 
     this.setTimeout(function (){
-    pagePreloder.classList.add('jl-fade-out');
+    pagePreloder.classList.add('pv-fade-out');
     },1000);
 });
 
 
 //Abrindo e fechando informações de contato
 btnContact.addEventListener('click', function () {
-    var boxContact = document.querySelector('.jl-contact-info');
-    boxContact.classList.toggle('jl-is-open');
-    this.classList.toggle('jl-change-icon');
+    var boxContact = document.querySelector('.pv-contact-info');
+    boxContact.classList.toggle('pv-is-open');
+    this.classList.toggle('pv-change-icon');
 });
 
 //page Preloader
@@ -29,21 +29,21 @@ btnContact.addEventListener('click', function () {
 //abrindo e fechando menu mobile
 
 for (var m = 0; m < toggleMenu.length; m++) {
-    toggleMenu[m].addEventListenner('click', function () {
-        var overlay = document.querySelector('.jl-menu-overlay');
-        menuMobile.classList.toggle('jl-menu-is-closed');
-        menuMobile.classList.toggle('jl-menu-is-open');
+    toggleMenu[m].addEventListener('click', function () {
+        var overlay = document.querySelector('.pv-menu-overlay');
+        menuMobile.classList.toggle('pv-menu-is-closed');
+        menuMobile.classList.toggle('pv-menu-is-open');
     });
 }
 
 //abrindo e fechando modal O.
 for (var i = 0; i < toggleModal.length; i++) {
-    toggleMenu[i].addEventListenner('click', function () {
-        var modalOrcamento = document.querySelector('#jl-modal-orcamento');
-        var overlay = document.querySelector('.jl-overlay');
-        overlay.classList.toggle('jl-is-open');
-        menuMobile.classList.toggle('jl-menu-is-open');
+    toggleMenu[i].addEventListener('click', function () {
+        var modalOrcamento = document.querySelector('#pv-modal-orcamento');
+        var overlay = document.querySelector('.pv-overlay');
+        overlay.classList.toggle('pv-is-open');
+        menuMobile.classList.toggle('pv-menu-is-open');
     });
 }
 
-jl-contact-info
+pv-contact-info
