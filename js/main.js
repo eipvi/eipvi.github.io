@@ -45,5 +45,3 @@ for (var i = 0; i < toggleModal.length; i++) {
         menuMobile.classList.toggle('pv-menu-is-open');
     });
 }
-
-pv-contact-info
