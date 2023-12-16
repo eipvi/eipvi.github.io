@@ -6,16 +6,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root {
+  --color-primary: rgb(18, 18, 18);
+  --color-secondary: #c54307;
+  --color-black: #000000;
+  --color-white: #ffffff;
+}
+
 img {
   display: block;
 }
 
-#pv-container-img {
-  background-image: url("/images/project-paula.png");
-  background-repeat: no-repeat;
-  background-position: 35% 10% bottom;
-  position: relative;
+
+ul {
+  list-style: none;
 }
+
+
+#pv-container-page {
+  width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.787);
+	overflow: hidden;
+}
+
 /* 
 font-family: 'Abril Fatface', serif;
 font-family: 'Open Sans', sans-serif;
@@ -23,6 +40,7 @@ font-family: 'Poppins', sans-serif; */
 
 body {
   font-family: "Open Sans", sans-serif;
+
 }
 
 @keyframes fadeOut {
@@ -84,8 +102,8 @@ body {
     width: 100%;
     height: 100vh;
     display: table;
-    background-color: rgb(18, 18, 18);
-    border: none;
+    background-color: var(--color-primary);
+    border: 20px solid var(--color-primary);
   }
 
   .pv-preloader {
@@ -119,8 +137,8 @@ body {
     width: 74px;
     height: 110px;
     float: left;
-    margin-left: 60px;
-    background-color: #c54307;
+    margin-left: 70px;
+    background-color: var(--color-secondary);
     border-radius: 0 0 37px 0;
   }
 
@@ -221,8 +239,8 @@ body {
     display: block;
     border-radius: 50%;
     border: none;
-    background-color: #c54307;
-    color: #000000;
+    background-color: var(--color-secondary);
+    color: var(--color-black);
     position: fixed;
     right: 35px;
     top: 30px;
@@ -243,7 +261,7 @@ body {
     width: 240px;
     height: 100vh;
     display: block;
-    background-color: #000000;
+    background-color: var(--color-black);
     position: fixed;
     top: 0;
     padding: 100px 30px 30px;
@@ -281,62 +299,38 @@ body {
     z-index: 1000;
     top: 0;
     left: 0;
-    background-color: #000;
+    background-color: var(--color-black);
   }
-  /* Home do container */
+  
+    /* Home do container */
 
-  .pv-display-text {
-    margin-top: 50%;
-  }
+    .pv-display-text {
+      margin-top: 50%;
+    }
+  
+    .pj-scroll-down {
+      width: 70px;
+      height: 100px;
+      border-radius: 35% 35% 0 0;
+      background-color: #00000000;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  
+    .pv-arrow-down {
+      width: 100%;
+      height: 75px;
+      display: table;
+      margin-top: 30px;
+      position: relative;
+      background-color: var(--color-black);
+    }
 
-  .pj-scroll-down {
-    width: 70px;
-    height: 100px;
-    border-radius: 35% 35% 0 0;
-    background-color: #00000000;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-  }
 
-  .pv-arrow-down {
-    width: 100%;
-    height: 75px;
-    display: table;
-    margin-top: 30px;
-    position: relative;
-  }
-
-  .pv-arrow-down img {
-    width: 16px;
-    height: 10px;
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 15px;
-    margin: 0 auto;
-    opacity: 0;
-    animation: arrowDown 2s linear 2s infinite;
-  }
-
-  .pv-arrow-down::before {
-    content: "";
-    width: 2px;
-    height: 35px;
-    display: block;
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    background-color: #ffffff;
-    animation: lineDown 1.5s ease-out infinite;
-    transform-origin: top center;
-  }
 }
 
 @media screen and (min-width: 576px) {
@@ -391,14 +385,14 @@ body {
   }
 
   .pv-menu a:hover {
-    color: #c54307;
+    color: var(--color-secondary);
   }
 
   .pv-menu a::before {
     content: "";
     width: 100%;
     height: 1px;
-    background-color: #c54307;
+    background-color: var(--color-secondary);
     display: block;
     position: absolute;
     bottom: -3px;
@@ -456,7 +450,7 @@ body {
 }
 
 .pv-btn-primary {
-  background-color: #c54307;
+  background-color: var(--color-secondary);
   color: #fff;
 }
 
@@ -466,7 +460,7 @@ body {
 }
 
 .pv-btn-second {
-  background-color: #000000;
+  background-color: var(--color-black);
   color: #fff;
 }
 
@@ -487,6 +481,11 @@ body {
   font-weight: 300;
 }
 
+.pv-font-size-h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
 /* cor de Texto  */
 
 .pv-title {
@@ -495,7 +494,7 @@ body {
 }
 
 .pv-text-orange {
-  color: #c54307;
+  color: var(--color-secondary);
 }
 
 .pv-text-black {
@@ -511,7 +510,7 @@ body {
 }
 
 .pv-text-white {
-  color: #fff;
+  color: var(--color-white);
 }
 
 /* Background Texto  */
@@ -542,7 +541,6 @@ body {
 
 .pv-full-height {
   height: 100vh;
-  background-color: rgb(18, 18, 18);
   margin: 45px solid #c54307;
 }
 
@@ -591,6 +589,16 @@ body {
 .pv-full-height {
   height: 100vh;
 }
+
+.pv-no-padding{
+  padding: 0 !important;
+}
+
+.pv-no-border {
+  border: none;
+}
+
+
 
 /* CLASSES COMPORTAMENTO */
 

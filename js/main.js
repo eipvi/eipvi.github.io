@@ -42,13 +42,3 @@ for (var m = 0; m < toggleMenu.length; m++) {
 //         menuMobile.classList.toggle('pv-menu-is-open');
 //     });
 // }
-
-//Animando Elementos on Scroll com Waypoints
-var myScrollDown = document.querySelector(".pj-scroll-down");
-var waypoint = new Waypoint({
-  element: myScrollDown,
-  handler: function () {
-    myScrollDown.classList.toggle("pv-fade-out");
-  },
-  offset: "50%",
-});
