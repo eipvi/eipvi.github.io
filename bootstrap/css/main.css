@@ -8,7 +8,7 @@
 
 :root {
   --color-primary: #181818;
-  --color-secondary: #c54307;
+  --color-secondary: #f7931a;
   --color-black: #000000;
   --color-white: #ffffff;
 }
@@ -95,6 +95,13 @@ body {
 }
 
 @media screen and (min-width: 280px) {
+  .pv-page-benefits {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0 20px 0;
+    background-color: var(--color-secondary);
+  }
+
   .pv-page-wrapper,
   .pv-preloader {
     width: 100%;
@@ -286,7 +293,7 @@ body {
   }
 
   .pv-menu-mob a:hover {
-    color: #c54307;
+    color: var(--color-secondary);
   }
 
   .pv-overlay,
@@ -485,7 +492,7 @@ body {
 /* cor de Texto  */
 
 .pv-title {
-  font-family: "Abril Fatface", serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
 }
 
@@ -512,7 +519,7 @@ body {
 /* Background Texto  */
 
 .pv-bg-orange {
-  background-color: #c54307;
+  background-color: var(--color-secondary);
 }
 
 .pv-bg-black {
