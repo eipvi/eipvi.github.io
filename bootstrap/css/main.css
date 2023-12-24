@@ -655,6 +655,7 @@ body {
   width: 150px;
   height: 150px;
   object-fit: cover;
+  
 }
 
 
@@ -673,7 +674,13 @@ body {
   justify-content: center;
 }
 
-.carousel .dragging {
+.carousel.no-transition {
+  scroll-behavior: auto;
+
+}
+
+.carousel.dragging {
+  scroll-snap-type: none;
   scroll-behavior: auto;
 }
 
@@ -717,7 +724,7 @@ body {
   scroll-snap-align: start;
   height: 242px;
   list-style: none;
-  border: 1px solid #f7931a;
+  /* border: 1px solid #f7931a; */
   border-radius: 8px;
   display: flex;
   cursor: pointer;
@@ -726,4 +733,4 @@ body {
   justify-content: center;
   flex-direction: column;
   margin: 5px;
-} 
+}  
