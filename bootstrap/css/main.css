@@ -20,6 +20,7 @@ img {
 ul {
   list-style: none;
 }
+
 /* 
 
 #pv-container-page {
@@ -105,7 +106,7 @@ body {
   .pv-page-wrapper,
   .pv-preloader {
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     display: table;
     background-color: var(--color-primary);
     border: 20px solid var(--color-primary);
@@ -335,7 +336,6 @@ body {
     background-color: var(--color-black);
   }
 
-
   .pv-wrapper .carousel {
     display: grid;
     grid-auto-flow: column;
@@ -350,13 +350,18 @@ body {
   .carousel::-webkit-scrollbar {
     display: none;
   }
+
+  .pv-img-about img {
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 70px;
+  }
 }
 
 @media screen and (min-width: 576px) {
-
   .pv-wrapper .carousel {
     grid-auto-columns: calc((100% / 3) - 5px);
-
   }
 }
 
@@ -429,13 +434,9 @@ body {
   .pv-menu a:hover::before {
     transform: scale(1, 1);
   }
-
- 
-
 }
 
 @media screen and (min-width: 1200px) {
-
 }
 
 @media screen and (min-width: 1364px) {
@@ -603,6 +604,17 @@ body {
   margin-top: 20px;
 }
 
+/* MARGIN 30 */
+
+.pv-mar-30 {
+  margin: 30px;
+}
+
+.pv-mar-top-30 {
+  margin-top: 30px;
+}
+
+/* PADDING 15 */
 .pv-pad-15 {
   padding: 15px;
 }
@@ -655,9 +667,7 @@ body {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  
 }
-
 
 .pv-display-bg {
   display: flex;
@@ -665,7 +675,6 @@ body {
   justify-content: center;
   min-height: 68vh;
   margin-top: 10px;
-
 }
 
 .pv-display-bg-flex {
@@ -676,7 +685,6 @@ body {
 
 .carousel.no-transition {
   scroll-behavior: auto;
-
 }
 
 .carousel.dragging {
@@ -733,4 +741,4 @@ body {
   justify-content: center;
   flex-direction: column;
   margin: 5px;
-}  
+}
